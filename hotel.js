@@ -64,21 +64,6 @@ function unlockRoom6() {
 
  //timer to kick out guests for cleaning
   
-  function timeOut() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[0].style.visibility = "hidden";
-      document.getElementById('cleanUp').innerHTML = "Come back another time, room is being cleaned!";
-      //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
-  // MR KAMS DEMO CODE. *******************************//
-  function timeOut2() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[1].style.visibility = "hidden";
-      document.getElementById('cleanUp2').innerHTML = "Come back another time, room is being cleaned!";
-       //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
 
   //END ************************************************//
 
@@ -94,42 +79,9 @@ function unlockRoom6() {
     },5000);
   }*/
  
-    function timeOut3() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[2].style.visibility = "hidden";
-      document.getElementById('cleanUp3').innerHTML = "Come back another time, room is being cleaned!";
-       //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
-  
-    function timeOut4() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[3].style.visibility = "hidden";
-      document.getElementById('cleanUp4').innerHTML = "Come back another time, room is being cleaned!";
-       //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
-  
-    function timeOut5() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[4].style.visibility = "hidden";
-      document.getElementById('cleanUp5').innerHTML = "Come back another time, room is being cleaned!";
-       //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
-  
-    function timeOut6() {
-    setTimeout (function() {
-      document.getElementsByTagName('button')[5].style.visibility = "hidden";
-      document.getElementById('cleanUp6').innerHTML = "Come back another time, room is being cleaned!";
-       //1000 milliseconds in one second = 5000 is 15 seconds
-    },5000);
-  }
+
  
-//*****************************ADD GUESTS  **************************** */
-
-
-
+//*****************************ADD GUESTS  **************************** *\
 
 
 function addName() {
@@ -190,7 +142,7 @@ if (arrName2.length < 4) {
   document.getElementById('allGuest2').innerHTML = "All Guests:" + arrGuest2; }
 
 else {//if name is inserted more than four times, do this
-      document.getElementsByTagName('h3')[0].innerHTML = "Room is full!";
+      document.getElementsByTagName('h3')[1].innerHTML = "Room is full!";
       
  
 }
@@ -225,7 +177,7 @@ if (arrName3.length < 4) {
   document.getElementById('allGuest3').innerHTML = "All Guests:" + arrGuest3; }
 
 else {//if name is inserted more than four times, do this
-      document.getElementsByTagName('h3')[0].innerHTML = "Room is full!";
+      document.getElementsByTagName('h3')[2].innerHTML = "Room is full!";
       
  
 }
@@ -259,7 +211,7 @@ if (arrName4.length < 4) {
   document.getElementById('allGuest4').innerHTML = "All Guests:" + arrGuest4; }
 
 else {//if name is inserted more than four times, do this
-      document.getElementsByTagName('h3')[0].innerHTML = "Room is full!";
+      document.getElementsByTagName('h3')[3].innerHTML = "Room is full!";
       
  
 }
@@ -293,7 +245,7 @@ if (arrName5.length < 4) {
   document.getElementById('allGuest5').innerHTML = "All Guests:" + arrGuest5; }
 
 else {//if name is inserted more than four times, do this
-      document.getElementsByTagName('h3')[0].innerHTML = "Room is full!";
+      document.getElementsByTagName('h3')[4].innerHTML = "Room is full!";
       
  
 }
@@ -327,7 +279,7 @@ if (arrName6.length < 4) {
   document.getElementById('allGuest6').innerHTML = "All Guests:" + arrGuest6; }
 
 else {//if name is inserted more than four times, do this
-      document.getElementsByTagName('h3')[0].innerHTML = "Room is full!";
+      document.getElementsByTagName('h3')[5].innerHTML = "Room is full!";
       
  
 }
@@ -396,13 +348,14 @@ function deleteAll6(){ //remove all listed items by putting 0
 function removeName() { //remove the listed name
   arrName.length--;
   document.getElementsByTagName('h3')[0].innerHTML = "Room 101";
-  var ol = document.getElementsByTagName('ol')[0];
-  var li = ol.childNodes[0];
-  ol.removeChild(li)[0];
- 
-
-
+  var list = document.getElementById("list");  
+  var i = document.getElementById('insertedNames1').value;
+  console.log(i);
+  list.removeChild(list.childNodes[i-1]);           
 }
+ 
+ 
+ 
 function removeName2() { //remove the listed name
   arrName2.length--;
   document.getElementsByTagName('h3')[1].innerHTML = "Room 102";
