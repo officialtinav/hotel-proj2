@@ -348,10 +348,10 @@ function deleteAll6(){ //remove all listed items by putting 0
 function removeName() { //remove the listed name
   arrName.length--;
   document.getElementsByTagName('h3')[0].innerHTML = "Room 101";
-  var list = document.getElementById("list");  
+  var list = document.getElementById("list");
   var i = document.getElementById('insertedNames1').value;
   console.log(i);
-  list.removeChild(list.childNodes[i-1]);           
+  list.removeChild(list.childNodes[i-1]);
 }
  
  
@@ -361,7 +361,7 @@ function removeName2() { //remove the listed name
   document.getElementsByTagName('h3')[1].innerHTML = "Room 102";
   var ol = document.getElementsByTagName('ol')[1]; //remove from ol2
   var li = ol.childNodes[0]; //define which li to remove
-  ol.removeChild(li)[0];
+  list.removeChild(list.childNodes[i-1]);
   
 }
 function removeName3() { //remove the listed name
