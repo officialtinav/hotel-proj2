@@ -3,7 +3,7 @@
     margin-right: 17px;
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
-    overflow: scroll;
+    overflow: auto;
    }
    
 #SecondRoom{
@@ -11,7 +11,7 @@
     margin-right: 17px;
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
-     overflow: scroll;
+    overflow: auto;
    }
    
 #ThirdRoom{
@@ -19,14 +19,14 @@
     margin-right: 17px;
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
-     overflow: scroll;
+     overflow: auto;
    }
 #FourthRoom{
     float:left;
     margin-right: 17px;
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
-     overflow: scroll;
+     overflow: auto;
    }
 #FifthRoom{
     float:left;
@@ -34,26 +34,18 @@
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
     position: static;
-     overflow: scroll;
+     overflow: auto;
    }
 #SixthRoom{
     float:left;
     border-radius: 15px;
     text-shadow: 3px 3px 6px grey;
-     overflow: scroll;
+    overflow: auto;
    }
    
-#hotelLogo {
-  position: absolute;
-  top: 8px;
-  right: 550px;
-}
 
-#hotelName {
-  text-shadow: 3px 3px 6px grey;
-  border-radius: 15px;
-  font-size: 20px;
-}
+
+
 
 
 button {
@@ -69,3 +61,4 @@ button:hover {
   background-color: #cecece;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+

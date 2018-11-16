@@ -358,37 +358,42 @@ function removeName() { //remove the listed name
  
 function removeName2() { //remove the listed name
   arrName2.length--;
-  document.getElementsByTagName('h3')[1].innerHTML = "Room 102";
-  var ol = document.getElementsByTagName('ol')[1]; //remove from ol2
-  var li = ol.childNodes[0]; //define which li to remove
+  document.getElementsByTagName('h3')[0].innerHTML = "Room 102";
+  var list = document.getElementById("list2");
+  var i = document.getElementById('insertedNames2').value;
+  console.log(i);
   list.removeChild(list.childNodes[i-1]);
-  
 }
+ 
 function removeName3() { //remove the listed name
   arrName3.length--;
-  document.getElementsByTagName('h3')[2].innerHTML = "Room 103";
-  var ol = document.getElementsByTagName('ol')[2]; //remove from ol2
-  var li = ol.childNodes[0]; //define which li to remove
-  ol.removeChild(li)[0];
-  }
+  document.getElementsByTagName('h3')[0].innerHTML = "Room 103";
+  var list = document.getElementById("list3");
+  var i = document.getElementById('insertedNames3').value;
+  console.log(i);
+  list.removeChild(list.childNodes[i-1]);
+}
 function removeName4() { //remove the listed name
   arrName4.length--;
-  document.getElementsByTagName('h3')[3].innerHTML = "Room 104";
-  var ol = document.getElementsByTagName('ol')[3]; //remove from ol2
-  var li = ol.childNodes[0]; //define which li to remove
-  ol.removeChild(li)[0];
- }
+  document.getElementsByTagName('h3')[0].innerHTML = "Room 104";
+  var list = document.getElementById("list4");
+  var i = document.getElementById('insertedNames4').value;
+  console.log(i);
+  list.removeChild(list.childNodes[i-1]);
+}
 function removeName5() { //remove the listed name
- arrName5.length--;
-  document.getElementsByTagName('h3')[4].innerHTML = "Room 105";
-  var ol = document.getElementsByTagName('ol')[4]; //remove from ol2
-  var li = ol.childNodes[0]; //define which li to remove
-  ol.removeChild(li)[0];
-  }
+  arrName5.length--;
+  document.getElementsByTagName('h3')[0].innerHTML = "Room 105";
+  var list = document.getElementById("list5");
+  var i = document.getElementById('insertedNames5').value;
+  console.log(i);
+  list.removeChild(list.childNodes[i-1]);
+}
 function removeName6() { //remove the listed name
   arrName6.length--;
-  document.getElementsByTagName('h3')[5].innerHTML = "Room 106";
-  var ol = document.getElementsByTagName('ol')[5]; //remove from ol2
-  var li = ol.childNodes[0]; //define which li to remove
-  ol.removeChild(li)[0];
- }
+  document.getElementsByTagName('h3')[0].innerHTML = "Room 106";
+  var list = document.getElementById("list6");
+  var i = document.getElementById('insertedNames6').value;
+  console.log(i);
+  list.removeChild(list.childNodes[i-1]);
+}
